@@ -3,6 +3,10 @@
 
 A time ago React component/Scrivito widget for the Scrivito CMS.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/mdwp/scrivito-time-ago/master/time-ago-screenshot.png)
+
 ## Installation
 
 Open your terminal.

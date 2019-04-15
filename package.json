@@ -1,6 +1,6 @@
 {
   "name": "scrivito-time-ago",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A time ago React component/Scrivito widget for the Scrivito CMS. ",
   "main": "index.js",
   "peerDependencies": {

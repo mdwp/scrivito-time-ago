@@ -5,7 +5,7 @@ import TimeAgo from 'react-timeago';
 Scrivito.provideComponent('TimeagoWidget', ({ widget }) => {
   const date = widget.get('date');
 
-  if (!date.length && Scrivito.isInPlaceEditingActive()) {
+  if (!date && Scrivito.isInPlaceEditingActive()) {
     return (
         <h4 className="text-center">
           Provide a date in the widget properties.
@@ -14,9 +14,12 @@ Scrivito.provideComponent('TimeagoWidget', ({ widget }) => {
   }
 
   return (
-    <h3>{widget.get('prefix')}
-    <TimeAgo  date={date} />
-    </h3>
+    <div>
+    <span className="prefix">{widget.get('prefix')}</span>
+    <span className="time"><TimeAgo  date={date} /></span>
+    <span className="postfix">{widget.get('postfix')}</span>
+    </div>
+
   );
 });
 

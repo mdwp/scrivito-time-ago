@@ -6,15 +6,18 @@ Scrivito.provideEditingConfig('TimeagoWidget', {
     attributes: {
         prefix: {
             title: 'Prefix',
+            description: 'Text shown before the date.'
         },
         date: {
             title: 'Date',
-
+            description: 'A Date in the past.'
         },
+
     },
     properties: [
         'prefix',
         'date',
+
     ],
 
 });

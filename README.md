@@ -13,7 +13,7 @@ Open your terminal.
 
 `$ cd` to your Scrivito project
 
-```
+```shell
 $ npm install scrivito-time-ago
 ```
 
@@ -21,37 +21,13 @@ Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
 
 Add this line to your index.js:
 
-```
+```js
 import "scrivito-time-ago";
 ```
 
-## Development
+## Widget properties
 
-With `npm run build` you can build the package into `build/`.
-
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
-
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-time-ago/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
-
-## Check code quality
-
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
-
-
-
+In the widget properties you can set:
+- Prefix - Text that will be shown before the date.
+- Date in the past
+- Postfix - Text that will be shown after the date.
